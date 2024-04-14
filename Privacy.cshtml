@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Our Privacy Commitment";
+}
+
+<main role="main" class="container">
+    <h1>@ViewData["Title"]</h1>
+    <p>Last updated: @DateTime.Now.ToString("MMMM dd, yyyy")</p>
+
+    <section>
+        <p>Your privacy is important to us. This page explains our policies regarding the collection, use, and disclosure of personal data when you use our service and the choices you have associated with that data. We use your data to provide and improve the service. By using the service, you agree to the collection and use of information in accordance with this policy.</p>
+    </section>
+
+    <a href="@Url.Action("Index", "Home")" class="btn btn-link">Return to Home</a>
+</main>

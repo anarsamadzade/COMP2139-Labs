@@ -1,0 +1,45 @@
+/* Box shadow with more spread and a subtle blue glow */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1), 0 0 15px rgba(38, 128, 235, 0.6);
+
+/* Ensures HTML fills the entire viewport height and has a fresh look */
+html {
+    position: relative;
+    min-height: 100%;
+    background: #f7f7f7; /* Light grey background for a subtle texture */
+}
+
+/* Body with a fixed footer space and a neutral color scheme */
+body {
+    margin-bottom: 60px; /* Adjusted to create space for a footer if needed */
+    background: #fff; /* White background for a clean look */
+    color: #333; /* Darker text for better readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+/* Navbar with a sleek design */
+.navbar {
+    text-align: right; /* Keeps the menu items aligned to the right */
+    background-color: #333; /* Dark background for contrast */
+    border-bottom: 3px solid #258cfb; /* Blue border for a pop of color */
+    padding: 0.5rem 1rem; /* Balanced padding for better spacing */
+}
+
+    /* Lab 5 - Dropdown Styling */
+    /* Custom Dropdown Style with a minimalist look */
+    .navbar .dropdown-toggle {
+        color: #258cfb; /* Blue text for a consistent theme */
+        background-color: transparent; /* Clear background for a minimalist button */
+        border: 2px solid #258cfb; /* Blue border matching the text */
+        border-radius: 0.25rem; /* Rounded corners for a softer look */
+        padding: 0.25rem 0.5rem; /* Padding adjusted for border and text */
+    }
+
+        /* Change color on hover for an interactive effect */
+        .navbar .dropdown-toggle:hover {
+            color: white; /* White text on hover for visibility */
+            background-color: #258cfb; /* Blue background on hover for a striking change */
+            border-color: #1a6dbb; /* Slightly darker border on hover for depth */
+    }
+
+/* Additional style changes for visual enhancements */
+/* Add more specific styles or override Bootstrap styles here */

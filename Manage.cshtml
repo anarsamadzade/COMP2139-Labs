@@ -1,0 +1,33 @@
+﻿@using WebApplication2.Models.ViewModels
+@model List<ManageUserRolesViewModel>
+
+@{
+    ViewData["Title"] = "Roles Management";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post" role="form">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Manage Roles for @ViewBag.UserName</h2>
+        </div>
+
+        <div class="card-body">
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <div class="form-group form-check">
+                    <input asp-for="@Model[i].Selected" class="form-check-input" id="@Model[i].RoleName" />
+                    <label class="form-check-label" for="@Model[i].RoleName">@Model[i].RoleName</label>
+                    <input type="hidden" asp-for="@Model[i].RolesId" />
+                    <input type="hidden" asp-for="@Model[i].RoleName" />
+                </div>
+            }
+            <div asp-validation-summary="All" class="alert alert-danger"></div>
+        </div>
+
+        <div class="card-footer bg-light">
+            <button type="submit" class="btn btn-success">Save Changes</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </div>
+</form>
