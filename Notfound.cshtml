@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Page Missing";
+}
+
+<main role="main" class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center">
+                <h1 class="display-1 font-weight-bold">Oops!</h1>
+                <h2 class="mt-2">404 - Cannot find what you’re looking for.</h2>
+                <p class="lead">The page you requested is on a coffee break and could not be found.</p>
+                <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg mt-3">
+                    <i class="fa fa-home"></i> Take me home
+                </a>
+                <p class="mt-4">
+                    If you typed the URL directly, please make sure the spelling is correct.
+                    If you clicked on a link to get here, the link may be outdated.
+                    What can you do? Have no fear, help is near! There are many ways you can get back on track.
+                </p>
+                <a href="@Url.Action("Contact", "Home")" class="btn btn-secondary mt-2">
+                    Report this issue
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <script>
+        console.error("404: Page not found - " + window.location.href);
+    </script>
+}
